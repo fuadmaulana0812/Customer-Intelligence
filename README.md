@@ -145,13 +145,13 @@ Capture these from the running app using the generated sample data. Save them in
 
 Suggested images in README (uncomment a line after adding the matching file):
 
-```markdown
-![Customer analytics dashboard overview](docs/images/dashboard_overview.png)
-![Churn analysis charts](docs/images/churn_analysis.png)
-![Churn model evaluation](docs/images/model_evaluation.png)
-![Customer segments](docs/images/customer_segments.png)
-![FastAPI prediction endpoints](docs/images/api_docs.png)
-```
+
+[Customer analytics dashboard overview](docs/images/dashboard_overview.png)
+[Churn analysis charts](docs/images/churn_analysis.png)
+[Churn model evaluation](docs/images/model_evaluation.png)
+[Customer segments](docs/images/customer_segments.png)
+[FastAPI prediction endpoints](docs/images/api_docs.png)
+
 
 ## Project structure
 
