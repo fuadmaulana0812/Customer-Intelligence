@@ -50,6 +50,8 @@ The labeled data is split into stratified training and test sets (80/20 by defau
 
 ## Exploratory analysis and dashboard
 
+<img align="center" width="500" height="300" src="https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/dashboard_overview.png">
+
 The Streamlit dashboard provides customer filters and summary metrics, then visualizes:
 
 - Churned customer count by contract.
@@ -70,11 +72,15 @@ The churn model is trained from the labeled customer data and evaluated on a str
 2. Random Forest
 3. XGBoost (optional dependency)
 
+<img align="center" width="500" height="300" src="https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/model_evaluation.png">
+
 The dashboard reports ROC AUC, precision, recall, F1, and accuracy, alongside a confusion matrix and ROC curve. It also scores the current customer records and allows the scored table to be downloaded as CSV. Choose the model based on the business cost of missed churners versus unnecessary retention outreach; no single metric should be treated as sufficient.
 
 The sample project does not publish a fixed model score because results depend on the data uploaded and the generated sample. The synthetic data is useful for trying the interface, not for making real customer decisions.
 
 ## Customer segmentation
+
+<img align="center" width="500" height="300" src="https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/customer_segments.png">
 
 The segmentation view applies K-means to available numeric customer measures, including tenure, monthly and total charges, and senior-citizen status. If service fields are available, it also derives a count of selected services. The view shows cluster profiles, a segment map, and a silhouette score when it can be calculated. Segments are descriptive groups and should be profiled before using them to shape customer outreach.
 
@@ -88,6 +94,8 @@ Start the API with `uvicorn api.main:app --reload`. The service exposes:
 | `GET /model` | Model algorithm, feature list, and saved evaluation metrics |
 | `POST /predict` | Score one customer record |
 | `POST /predict/batch` | Score a list of customer records |
+
+<img align="center" width="500" height="300" src="https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/api_docs.png">
 
 Interactive API documentation is available at `http://localhost:8000/docs`. Example single-record request:
 
@@ -132,26 +140,6 @@ uvicorn api.main:app --reload
 - API documentation: `http://localhost:8000/docs`
 - MLflow tracking: runs locally by default when MLflow is installed; set `MLFLOW_TRACKING_URI` to use another tracking store.
 - XGBoost: optional; install it with `pip install xgboost` to enable the XGBoost model choice.
-
-## Screenshots for the portfolio README
-
-Capture these from the running app using the generated sample data. Save them in `docs/images/` and add the Markdown image lines below to the relevant sections above. Keep the browser zoom and window size consistent so the dashboard looks cohesive.
-
-1. **`dashboard_overview.png`** — Full dashboard overview showing the dark theme, KPI cards, expanded sidebar filters with checkbox values, and the contract/payment charts. This should be the README's lead image.
-2. **`churn_analysis.png`** — Overview lower section showing churn distribution by tech support and paperless billing, plus average monthly charges by tenure and churn status.
-3. **`model_evaluation.png`** — Churn Model tab with model selector, evaluation metrics, confusion matrix, and ROC curve visible together.
-4. **`customer_segments.png`** — Segments tab with cluster summary, silhouette score, and segment map.
-5. **`api_docs.png`** — FastAPI `/docs` page showing the prediction endpoints. Optionally expand `/predict` and show a sample response.
-
-Suggested images in README (uncomment a line after adding the matching file):
-
-
-[Customer analytics dashboard overview](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/dashboard_overview.png)
-[Churn analysis charts](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/churn_analysis.png)
-[Churn model evaluation](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/model_evaluation.png)
-[Customer segments](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/customer_segments.png)
-[FastAPI prediction endpoints](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/api_docs.png)
-
 
 ## Project structure
 
