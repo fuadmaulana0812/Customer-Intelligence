@@ -146,11 +146,11 @@ Capture these from the running app using the generated sample data. Save them in
 Suggested images in README (uncomment a line after adding the matching file):
 
 
-[Customer analytics dashboard overview](docs/images/dashboard_overview.png)
-[Churn analysis charts](docs/images/churn_analysis.png)
-[Churn model evaluation](docs/images/model_evaluation.png)
-[Customer segments](docs/images/customer_segments.png)
-[FastAPI prediction endpoints](docs/images/api_docs.png)
+[Customer analytics dashboard overview](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/dashboard_overview.png)
+[Churn analysis charts](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/churn_analysis.png)
+[Churn model evaluation](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/model_evaluation.png)
+[Customer segments](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/customer_segments.png)
+[FastAPI prediction endpoints](https://github.com/fuadmaulana0812/Customer-Intelligence/blob/0026705afdad7082de75a16d958ebc664da6aa3f/images/api_docs.png)
 
 
 ## Project structure
